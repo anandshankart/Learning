@@ -40,7 +40,18 @@ public class StringRotate {
 			return "Invalid Input String or index value";
 	}
 	
-//	public String rotateLogic2(){
-//		
-//	}
+	public String rotateLogic2(){
+		if(validateString()){
+			
+			char inputArray[]  = inputString.toCharArray();
+			String result = "";
+			
+			for(int i=index+1; i<inputArray.length; i++){
+				result.concat(""+inputArray[i]);
+			}
+			return  result;
+		}
+		else
+			return "Invalid Input String or index value";	
+	}
 }
